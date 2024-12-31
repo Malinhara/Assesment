@@ -5,7 +5,7 @@ const bookService = {
       const { query = 'fiction', maxResults = 20, startIndex = 0 } = data;  // Default query to 'fiction'
       
       try {
-        const response = await axios.get('https://www.googleapis.com/books/v1/volumes', {
+        const response = await axios.get(`${process.env.GOOGLEAPI}`, {
           params: { q: query, maxResults, startIndex },
         });
   
