@@ -15,9 +15,7 @@ const BookCard = ({ book }) => {
       <div className="book-info">
         <h2 className="book-title">{title}</h2>
         <p className="book-authors">{authors ? authors.join(', ') : 'Unknown Author'}</p>
-        <p className="book-description">
-          {description ? description.substring(0, 150) + '...' : 'No description available'}
-        </p>
+        
       </div>
     </div>
   );

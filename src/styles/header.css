@@ -1,0 +1,179 @@
+/* Header.css */
+
+
+.header-container {
+    background-color: #2F4F4F;
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+
+  .Topnavbar {
+    background-color: #f4f2e9;
+    padding: 1px 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left:20%;
+  }
+  
+  /* Styling for the "Good" text */
+  .Topnavbar .good {
+    font-size: 22px;  /* Larger size for "Good" */
+    font-weight: semi-bold;
+    color:rgb(212, 96, 60)   /* Green color for "Good" */
+
+  }
+  
+  /* Styling for the "Reads" text */
+  .Topnavbar .reads {
+    font-size: 22px;  /* Slightly smaller size for "Reads" */
+    font-weight: normal;
+    color: #FF5722;   /* Orange color for "Reads" */
+ /* Adds a small space between "Good" and "Reads" */
+  }
+
+  .main-content {
+    flex: 1;
+    max-width: 1200px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .left-section {
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .trophy {
+    width: 60px;
+    height: 60px;
+    background: #FFD700;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .trophy::after {
+    content: '';
+    width: 30px;
+    height: 40px;
+    background: #FFB700;
+    transform: rotate(45deg);
+  }
+  
+  .badge {
+    background: #FFD700;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  .badge-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .badge-awards {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .badge-year {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .center-section {
+    color: white;
+    margin-right: 120px
+  }
+  
+  .announcing {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .readers-favorite {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .books-of {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  .star-1 { top: 20%; right: 15%; }
+  .star-2 { top: 40%; right: 25%; }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .circle-1 {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    left: 10%;
+  }
+  
+  .circle-2 {
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    left: 20%;
+  }
+  
+  @media (max-width: 1024px) {
+    .header-container {
+      flex-direction: column;
+    }
+    .left-section{
+        margin-top:10%;
+    }
+  
+    .main-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .center-section {
+      margin: 20px 0;
+    }
+  
+    .announcing {
+      font-size: 36px;
+    }
+  
+    .readers-favorite, .books-of {
+      font-size: 28px;
+    }
+  }
+  

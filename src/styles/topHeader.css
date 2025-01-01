@@ -1,0 +1,20 @@
+.header-container {
+    background-color: #2F4F4F;
+    min-height: 150px;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    max-width: 1200px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
