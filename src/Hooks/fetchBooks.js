@@ -14,7 +14,7 @@ const useBooks = (query = 'fiction', maxResults = 20, currentPage = 1) => {
       setLoading(true);
       try {
         const startIndex = (currentPage - 1) * maxResults; // Calculate startIndex for pagination
-        const response = await axios.get(`http://localhost:3001/book/getall`, {
+        const response = await axios.get(`${process.env.BACKENDURL}/book/getall`, {
           params: { query, maxResults, startIndex },  // Pass parameters to the API
         });
 
