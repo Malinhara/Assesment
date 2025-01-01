@@ -40,15 +40,13 @@ const Home = () => {
 
 <div class="container">
 
-  <div class="grid-item"><h3>Deciding what to read next?</h3>
+  <div class="grid-item"><h5>Deciding what to read next?</h5>
   You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.</div>
-  <div class="grid-item"><h3>What are your friends reading?</h3>
-Chances are your friends are discussing their favorite (and least favorite) books on Goodreads.
+  <div class="grid-item"><h5>What are your friends reading?</h5>
+   Chances are your friends are discussing their favorite (and least favorite) books on Goodreads.
 
 </div>
   <div class="grid-item"></div>
-
-
   <div class="row-2">
     <div class="grid-item"> 
         {loading ? (
@@ -65,7 +63,7 @@ Chances are your friends are discussing their favorite (and least favorite) book
   </div>
 
   <div class="grid-item"> Search and browse books<br></br><SearchBar query={query} setQuery={setQuery} /></div>
-  <div class="row-2">
+  <div class="row-3">
     <div class="grid-item"><img src="https://i.ibb.co/wgqt0Jk/Screenshot-2025-01-01-172033.jpg" alt="Screenshot-2025-01-01-172033" border="0"/></div>
     
   </div>
